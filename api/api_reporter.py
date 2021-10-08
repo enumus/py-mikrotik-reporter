@@ -18,7 +18,7 @@ active_tokens = json.loads(cfg.get('System', 'active_tokens', vars=os.environ))
 authorised_users = json.loads(cfg.get('System', 'authorised', vars=os.environ))
 
 # create a global telegram connector
-tg_conn = TelegramConnector()
+# tg_conn = TelegramConnector()
 
 
 def get_ip_from_message(message):
@@ -58,9 +58,9 @@ def process_message(message):
     mt_conn = MtConnector()
     mt_res = mt_conn.add_to_blacklist(ip=ip)
     if mt_res:
-        tg_conn.send(message=f"IP {ip} has been added to the blacklist successfully")
+        # tg_conn.send(message=f"IP {ip} has been added to the blacklist successfully")
     else:
-        tg_conn.send(message=f"It has been an error when adding the IP {ip} to the blacklist")
+        # tg_conn.send(message=f"It has been an error when adding the IP {ip} to the blacklist")
     mt_conn.close_connection()
 
     # Reports the IP to Abuse IP DB and sends a notification to Telegram
@@ -83,7 +83,7 @@ def process_data(data):
         print("Skipping process")
         return
 
-    tg_conn.send(message=message)
+    # tg_conn.send(message=message)
     print("This is the message:", message)
 
     source = find_source(message)
@@ -102,7 +102,7 @@ def get_messages(token):
             process_data(request.json)
             return 'success', 200
         except Exception as e:
-            tg_conn.send(message=str(e))
+            # tg_conn.send(message=str(e))
             abort(500)
     else:
         print("The call is not a POST call")
