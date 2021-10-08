@@ -1,16 +1,16 @@
 [System]
-active_tokens = %(ACTIVE_TOKENS)
-authorised = %(AUTHORISED)
+active_tokens = %(ACTIVE_TOKENS)s
+authorised = %(AUTHORISED)s
 
 [Mikrotik]
-gateway = %(MIKROTIK_GATEWAY)
-user = %(MIKROTIK_USER)
-password = %(MIKROTIK_PASSWORD)
+gateway = %(MIKROTIK_GATEWAY)s
+user = %(MIKROTIK_USER)s
+password = %(MIKROTIK_PASSWORD)s
 
 [AbuseIPDB]
-endpoint = %(ABUSE_ENDPOINT)
-key = %(ABUSE_KEY)
+endpoint = %(ABUSE_ENDPOINT)s
+key = %(ABUSE_KEY)s
 
 [Telegram]
-token = %(TELEGRAM_TOKEN)
-chat_id = %(TELEGRAM_CHAT_ID)
+token = %(TELEGRAM_TOKEN)s
+chat_id = %(TELEGRAM_CHAT_ID)s
