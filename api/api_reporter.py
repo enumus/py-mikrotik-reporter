@@ -64,16 +64,15 @@ def process_message(message):
     mt_conn.close_connection()
 
     # Reports the IP to Abuse IP DB and sends a notification to Telegram
-    # ab_conn = AbuseIPDBConnector()
-    # if port:
-    #     print("Port:", port)
-    #     ab_res = ab_conn.report(ip=ip, port=port)
-    # else:
-    #     ab_res = ab_conn.report(ip=ip)
-    # if "error" in ab_res:
-    #     tg_conn.send(message=f"It has been an error when reporting the IP {ip}. Error: {ab_res['errors'][0]['detail']}")
-    # else:
-    #     tg_conn.send(message=f"IP {ip} has been reported successfully. Score: {ab_res['data']['abuseConfidenceScore']}")
+    ab_conn = AbuseIPDBConnector()
+    if port:
+        ab_res = ab_conn.report(ip=ip, port=port)
+    else:
+        ab_res = ab_conn.report(ip=ip)
+    if "error" in ab_res:
+        tg_conn.send(message=f"It has been an error when reporting the IP {ip}. Error: {ab_res['errors'][0]['detail']}")
+    else:
+        tg_conn.send(message=f"IP {ip} has been reported successfully. Score: {ab_res['data']['abuseConfidenceScore']}")
 
 
 def process_data(data):
