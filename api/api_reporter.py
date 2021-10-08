@@ -57,10 +57,10 @@ def process_message(message):
     # Adds the ip to Mikrotiks blacklist and sends a notification to Telegram
     mt_conn = MtConnector()
     mt_res = mt_conn.add_to_blacklist(ip=ip)
-    if mt_res:
-        # tg_conn.send(message=f"IP {ip} has been added to the blacklist successfully")
-    else:
-        # tg_conn.send(message=f"It has been an error when adding the IP {ip} to the blacklist")
+    # if mt_res:
+    #      tg_conn.send(message=f"IP {ip} has been added to the blacklist successfully")
+    # else:
+    #      tg_conn.send(message=f"It has been an error when adding the IP {ip} to the blacklist")
     mt_conn.close_connection()
 
     # Reports the IP to Abuse IP DB and sends a notification to Telegram
