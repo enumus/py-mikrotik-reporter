@@ -8,7 +8,7 @@ class MtConnector:
     """Mikrotik command execution class"""
     def __init__(self):
         cfg = configparser.ConfigParser()
-        cfg.read('config.ini')
+        cfg.read('/app/config.ini')
 
         # Setting configuration values
         self.mt_gateway = cfg.get('Mikrotik', 'gateway', vars=os.environ)

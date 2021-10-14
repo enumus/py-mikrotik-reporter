@@ -7,7 +7,7 @@ class TelegramConnector:
     """Telegram API connection class"""
     def __init__(self):
         cfg = configparser.ConfigParser()
-        cfg.read('config.ini')
+        cfg.read('/app/config.ini')
 
         # Setting configuration values
         self.tg_token = cfg.get('Telegram', 'token', vars=os.environ)

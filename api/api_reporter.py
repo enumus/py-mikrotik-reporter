@@ -11,7 +11,7 @@ from connectors.telegram_connector import TelegramConnector
 api_reporter = Blueprint("api_reporter", __name__, url_prefix="/api/report")
 
 cfg = configparser.ConfigParser()
-cfg.read('config.ini')
+cfg.read('/app/config.ini')
 
 # Setting configuration values
 active_tokens = json.loads(cfg.get('System', 'active_tokens', vars=os.environ))

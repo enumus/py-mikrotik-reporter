@@ -7,7 +7,7 @@ class AbuseIPDBConnector:
     """Abuse IP DB API connection class"""
     def __init__(self):
         cfg = configparser.ConfigParser()
-        cfg.read('config.ini')
+        cfg.read('/app/config.ini')
 
         # Setting configuration values
         self.abuse_endpoint = cfg.get('AbuseIPDB', 'endpoint', vars=os.environ)
