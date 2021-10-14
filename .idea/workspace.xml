@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="" />
+    <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main.wsgi" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634221014210</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Removed wsgi file from the project since it is not really part of the project">
+      <created>1634221167145</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634221167145</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +257,7 @@
     <MESSAGE value="wsgi file config" />
     <MESSAGE value="added host to the run function" />
     <MESSAGE value="added pexpect to the requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pexpect to the requirements" />
+    <MESSAGE value="Removed wsgi file from the project since it is not really part of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed wsgi file from the project since it is not really part of the project" />
   </component>
 </project>
