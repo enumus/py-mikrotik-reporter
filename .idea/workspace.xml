@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.wsgi" afterDir="false" />
-    </list>
+    <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634204745158</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="wsgi file config">
+      <created>1634215298520</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634215298520</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +213,7 @@
     <MESSAGE value="update on requirements.txt - change paramiko requirements" />
     <MESSAGE value="removed paramiko library and added pexpect library" />
     <MESSAGE value="removed cryptography from requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed cryptography from requirements.txt" />
+    <MESSAGE value="wsgi file config" />
+    <option name="LAST_COMMIT_MESSAGE" value="wsgi file config" />
   </component>
 </project>
