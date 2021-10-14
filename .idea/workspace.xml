@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634215770706</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added test endpoint">
+      <created>1634216741330</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634216741330</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,6 +231,7 @@
     <MESSAGE value="removed cryptography from requirements.txt" />
     <MESSAGE value="wsgi file config" />
     <MESSAGE value="added host to the run function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added host to the run function" />
+    <MESSAGE value="added test endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test endpoint" />
   </component>
 </project>
