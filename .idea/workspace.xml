@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.wsgi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.wsgi" beforeDir="false" afterPath="$PROJECT_DIR$/main.wsgi" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634221167145</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="REVERT: Removed wsgi file from the project since it is not really part of the project">
+      <created>1634221518716</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634221518716</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +249,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
@@ -258,6 +268,7 @@
     <MESSAGE value="added host to the run function" />
     <MESSAGE value="added pexpect to the requirements" />
     <MESSAGE value="Removed wsgi file from the project since it is not really part of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed wsgi file from the project since it is not really part of the project" />
+    <MESSAGE value="REVERT: Removed wsgi file from the project since it is not really part of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="REVERT: Removed wsgi file from the project since it is not really part of the project" />
   </component>
 </project>

@@ -9,6 +9,7 @@ app.register_blueprint(api_reporter)
 def home():
     abort(404)
 
+
 @app.route('/test', methods=['GET'])
 def test():
     return "This is the test result", 200
