@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="Removed test endpoint from">
+    <list default="true" id="15f70122-86b7-43da-8b7f-8a9662d78b7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/mikrotik_command_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/mikrotik_command_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/mikrotik_delete_blacklist_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/mikrotik_delete_blacklist_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectors/mikrotik_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/mikrotik_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,17 +61,17 @@
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="MikrotikReporter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -241,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634245032576</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changed the config.ini path for a absolute path within the container">
+      <created>1634247134463</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634247134463</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +286,7 @@
     <MESSAGE value="Removed wsgi file from the project since it is not really part of the project" />
     <MESSAGE value="REVERT: Removed wsgi file from the project since it is not really part of the project" />
     <MESSAGE value="change in import in main.wsgi and spaces between lines in main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="change in import in main.wsgi and spaces between lines in main.py" />
+    <MESSAGE value="changed the config.ini path for a absolute path within the container" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the config.ini path for a absolute path within the container" />
   </component>
 </project>

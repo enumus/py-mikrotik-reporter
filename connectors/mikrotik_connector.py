@@ -1,7 +1,7 @@
 import configparser
 import os
 
-from pexpect import pxssh
+import paramiko
 
 
 class MtConnector:
@@ -15,25 +15,29 @@ class MtConnector:
         self.mt_user = cfg.get('Mikrotik', 'user', vars=os.environ)
         self.mt_password = cfg.get('Mikrotik', 'password', vars=os.environ)
 
-        self.conn = pxssh.pxssh()
-        self.conn.login(
+        self.conn = paramiko.SSHClient()
+        self.conn.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        self.conn.connect(
             self.mt_gateway,
             username=self.mt_user,
             password=self.mt_password,
+            allow_agent=False,
+            look_for_keys=False
         )
 
     def add_to_blacklist(self, ip):
         cmd = f"/ip firewall address-list add list=blacklist address={ip}/32"
-        r = self.send_command(cmd=cmd)
-        if r == "":
+        stdin, stdout, stderr = self.conn.exec_command(cmd)
+        if stdout.readline() == "":
             return True
         else:
             return False
 
     def send_command(self, cmd):
-        self.conn.sendline(cmd)
-        self.conn.prompt()
-        return self.conn.before
+        stdin, stdout, stderr = self.conn.exec_command(cmd)
+
+        return stdout
 
     def close_connection(self):
-        self.conn.logout()
+        self.conn.close()
+
